@@ -6,15 +6,16 @@ const root = new Vue({
     data: {
         players: [
             { text: 'Dusan Vlahovic', done: '', },
-            { text: 'Dusan Vlahovic', done: '', },
-            { text: 'Dusan Vlahovic', done: '', },
-            { text: 'Dusan Vlahovic', done: '', },
+            { text: 'Ibra', done: '', },
+            { text: 'messi', done: '', },
+            { text: 'Ronaldo', done: '', },
             { text: 'Dusan Vlahovic', done: '', },
         ]
     },
     methods: {
         deletTask(index) {
-            console.log(index);
+            this.players.splice(index, 1);
+            console.log(index)
         }
     }
 });

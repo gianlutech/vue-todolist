@@ -32,12 +32,13 @@
                     aria-label="default input example">
                 <button type="button" class="btn btn-success setting">Aggiungi</button>
             </div>
-            <ul class="list-group my-3">
-                <li v-for="(player, index) in players" class="list-group-item setting d-flex justify-content-between">
+            <ul v-if="players.length >= 1" class="list-group my-3">
+                <li v-for="(player, i) in players" class="list-group-item setting d-flex justify-content-between">
                     <div>{{ player.text }}</div>
-                    <button type="button" class="btn-close" aria-label="Close" @click="deletTask(index)"></button>
+                    <button type="button" class="btn-close" aria-label="Close" @click="deletTask(i)"></button>
                 </li>
             </ul>
+            <h3 v-else class="text-center text-white my-5">Non ci sono giocatori nella lista!!!</h3>
         </main>
     </div>
     <script src="js/script.js"></script>
