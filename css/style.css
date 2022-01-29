@@ -1,0 +1,29 @@
+header{
+    min-height: 100px;
+    border-bottom: 10px solid white;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Bangers', cursive;
+}
+
+
+#title{
+    
+    color: white;
+    font-size: 56px;
+    margin-right: 50px;
+}
+
+
+
+.bg-green{
+    background-color: #598A00;
+}
+
+.setting{
+    background-color: #598A00;
+    color: white;
+    border: 5px solid white
+}
