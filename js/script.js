@@ -31,8 +31,8 @@ const root = new Vue({
             this.newPlayer = '';
         },
 
-        toggleTaskDone() {
-
+        toggleTaskDone(index) {
+            this.players[index].done = !this.players[index].done;
         }
     }
 });
